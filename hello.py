@@ -1,19 +1,17 @@
-try:
-    def hello():
-        print("Welcome to the division calculator")
-    hello()
-    numerator=int(input("Enter your numerator number: "))
-    denominator=int(input("Enter your denominator number: "))
-    result=numerator/denominator
-    
-except ZeroDivisionError as e:
-    print("You cannot divide by zero")
-except ValueError as e:
-    print("You must enter a number")
-except Exception as e:
-    print("An error occurred")
-else:
-    print(f"The result to your answer is:{round(result,2)}")
-finally:
-    print("This is the end of the program")
+class Product:
+    def __init__(self, product_name, product_price, product_description):
+        self.product_name = product_name
+        self.product_price = product_price
+        self.product_description = product_description
+        
+    def get_name(self):
+        return self.product_name
+
+    def set_name(self, name):
+        self.product_name = name
+
+
+p1= Product("Laptop", 1000, "A high-performance laptop")
+print(p1.get_name())  # Output: Laptop
+
     
