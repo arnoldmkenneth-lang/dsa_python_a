@@ -13,5 +13,4 @@ class Product:
 
 p1= Product("Laptop", 1000, "A high-performance laptop")
 print(p1.get_name())  # Output: Laptop
-
     
